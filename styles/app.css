@@ -1,0 +1,205 @@
+@import "utilities.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+  --primary:#172755;
+  --secondary:#8794BA;
+  --tertiary:#EF2A82;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing:antialiased;
+  font-family: Roboto,sans-serif;
+}
+h1,h2,h3{
+  color: var(--primary);
+}
+body{
+  position: relative;
+}
+img{
+  width:50%;
+}
+header{
+  background-color: var(--primary);
+  /* background-color: transparent; */
+}
+header nav{
+  padding: 0.5rem 0;
+}
+
+.container{
+  max-width: 1600px;
+  width:70%;
+  padding: 0 15px;
+  margin:0 auto;
+  position: relative;
+  z-index: 1;
+}
+.container .left .brand-name{
+  margin:0 6rem 0 0.5rem;
+  font-size: 2rem;
+  color:white
+}
+.container .left a{
+  text-decoration: none;
+  color: var(--secondary);
+  margin: 0.5rem;
+  transition: all .3s ease;
+}
+.container .left a:hover{
+  color: var(--tertiary);
+}
+/* .hero-content{
+  width: 70%;
+  height: 50%;
+  margin:25rem auto;
+} */
+.hero-section{
+  padding: 5% 50% 20% 0;
+}
+/*
+.hero-section .left{
+  width: 50%;
+} */
+.hero-section .left h1{
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: white;
+}
+.header-end{
+  width:100%;
+  height: 15vh;
+  position: relative;
+}
+.image-container{
+  /* width: 15%; */
+  position: absolute;
+  top: -26rem;
+  right: 0rem;
+}
+.overlay-2{
+  background-color: var(--tertiary);
+  height: 15.2vh;
+  width: 100%;
+  position: absolute;
+  clip-path: polygon(0 90%,100% 0%,100% 10%,0% 100%);
+}
+.overlay-3{
+  background-color: white;
+  height: 15.2vh;
+  width: 100%;
+  position: absolute;
+  clip-path: polygon(0 100%,100% 10%,100% 100%,0% 100%);
+}
+.screen{
+  position: relative;
+}
+.image1{
+  width: 40rem;
+  position: absolute;
+  right: 0;
+}
+.image2{
+  width: 20rem;
+}
+.chart{
+  position: absolute;
+  top:10rem;
+  right: 25rem;
+}
+.overlay{
+  margin:15% 0;
+  background-color: white;
+  height: 5vh;
+  position: relative;
+}
+.image-c{
+  position: relative;
+  display: inline-block;
+}
+/* 
+.image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  max-width: calc(100% / 3); /* Adjust the denominator to match the desired size ratio
+  height: auto;
+}
+ */
+.middle-section .container{
+  height: 200vh;
+}
+.main-features{
+  height: 50vh;
+}
+.head{
+  text-align: center;
+}
+.container-cards{
+  height: 25vh;
+}
+.features-description{
+  height: 100vh;
+}
+.features-description section:nth-child(2n+1){
+  flex-direction: row-reverse;
+}
+.footer{
+  background-color: var(--primary);
+  /* height: 55vh; */
+}
+.foot-overlay-3{
+  background-color: var(--primary);
+  height: 15.2vh;
+  width: 100%;
+  clip-path: polygon(0 100%,100% 10%,100% 100%,0% 100%);
+}
+.plan-card{
+  height: 25vh;
+}
+.plan-card-container{
+  height: 55vh;
+  width:70%;
+}
+.plans .title h2{
+  color:white;
+}
+.plan-card{
+  border:2px solid var(--secondary);
+  border-radius: 10%;
+  height: 70%;
+  width: 30%;
+  background-color: #0F1F4B;
+}
+.unit h1{
+  color:white;
+}
+
+.plan-card-container .plan-card:nth-child(2){
+  background-color: white;
+}
+.plan-card-container .plan-card:nth-child(2) .unit h1{
+  color:var(--primary);
+}
+.plan-card-container .plan-card:nth-child(2) .title h2{
+  color:var(--primary);
+}
+.title{
+  margin: 3rem 0;
+}
+.description{
+  font-size: 18px;
+  font-weight: 400;
+  color:#8794BA;
+  line-height: 27px;
+  text-align: center;
+}
